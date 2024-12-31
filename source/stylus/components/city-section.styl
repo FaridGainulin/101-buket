@@ -1,0 +1,95 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 0
+    +above($breakpoints.sm)
+      padding 50px 0 0
+    +above($breakpoints.md)
+      padding 70px 0 0
+    +above($breakpoints.xxl)
+      padding 110px 0 0
+
+  &__img
+    position: absolute
+    z-index -1
+    width: 150px;
+    height: auto;
+    bottom: 102px;
+    left: 77px;
+    +above($breakpoints.sm)
+      width: 212px;
+      bottom: 58px;
+      left: 247px;
+    +above($breakpoints.md)
+      width: 300px;
+      bottom: 47px;
+      left: 333px;
+    +above($breakpoints.xxl)
+      width 408px
+      bottom: 39px
+      left: 380px
+
+  &__box
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    margin-bottom 210px
+    text-align: center
+    color: $color-black-text
+    +above($breakpoints.sm)
+      text-align: start
+      flex-direction: row
+      align-items: flex-end
+      justify-content space-between
+      margin-bottom 50px
+    +above($breakpoints.md)
+      margin-bottom 90px
+    +above($breakpoints.xxl)
+      margin-bottom 167px
+
+  &__title
+    padding-bottom 10px
+    +above($breakpoints.sm)
+      padding-bottom 60px
+    +above($breakpoints.md)
+      padding-bottom 25px
+    +above($breakpoints.xxl)
+      padding-bottom 30px
+
+  &__box-right
+    +above($breakpoints.sm)
+      padding-right 20px
+    +above($breakpoints.md)
+      padding-right 30px
+    +above($breakpoints.xxl)
+      padding-right 45px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 7px
+    margin 15px auto 0
+    width 280px
+    +above($breakpoints.sm)
+      margin 0
+      margin-top 20px
+      gap: 10px
+      width 235px
+    +above($breakpoints.md)
+      margin-top 25px
+      gap: 15px
+      width 275px
+    +above($breakpoints.xxl)
+      margin-top 30px
+      gap: 20px
+      width 330px

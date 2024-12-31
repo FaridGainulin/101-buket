@@ -1,0 +1,83 @@
+.bullet-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 15px 0
+  +above($breakpoints.sm)
+    display: none
+  &--left
+    justify-content start
+  &--right
+    justify-content flex-end
+.swiper-pagination-bullet
+  background-color $color-bullet
+  width: 5px
+  height: 5px
+  border-radius: 50%
+  opacity: 1
+  position relative
+.swiper-pagination-bullet-active
+  transform: scale(1.5)
+  transition transform 0.8s
+  background-color: $color-bullet-active
+
+
+.bullet-pagination-mini
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 10px 0 0
+  +above($breakpoints.sm)
+    display: none
+  &--left
+    justify-content start
+  &--right
+    justify-content flex-end
+.swiper-pagination-bullet
+  background-color $color-bullet
+  width: 5px
+  height: 5px
+  border-radius: 50%
+  opacity: 1
+  position relative
+.swiper-pagination-bullet-active
+  transform: scale(1.5)
+  transition transform 0.8s
+  background-color: $color-bullet-active
+
+
+.desktop-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 15px 0
+  +above($breakpoints.sm)
+    gap: 5px
+    margin 18px 0
+  +above($breakpoints.md)
+    margin 20px 0
+  +above($breakpoints.xxl)
+    margin 24px 0
+.swiper-pagination-bullet
+  background-color $color-bullet
+  width: 5px
+  height: 5px
+  border-radius: 50%
+  opacity: 1
+  position relative
+  +above($breakpoints.sm)
+    width 6px
+    height: 6px
+  +above($breakpoints.md)
+    width 7px
+    height: 7px
+  +above($breakpoints.xxl)
+    width 8px
+    height: 8px
+.swiper-pagination-bullet-active
+  transform: scale(1.5)
+  transition transform 0.8s
+  background-color: $color-bullet-active

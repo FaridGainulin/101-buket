@@ -1,0 +1,33 @@
+section.calculation-section
+  .wrapper
+    .calculation-section__container
+      h2.calculation-section__title.font-w-p-regular.font-s-52.text-up
+        | Узнайте, сколько
+        br
+        | вы будете зарабатывать
+      .calculation-section__custom-select.custom-select
+        #select-header.calculation-section__select-header
+          span#selected-option.font-w-regular.font-s-22 Выберите формат:
+          img.calculation-section__select-icon(src="images/select-icon.svg" loading="lazy" width="24" height="13" alt="icon")
+        ul#select-options.calculation-section__select-options
+          li.font-w-regular.font-s-20(data-value="500000") Мини-магазин
+          li.font-w-regular.font-s-20(data-value="1000000") Магазин
+      .calculation-section__text.font-w-semi-bold.font-s-24-a Перетащите бегунок и узнайте, <br> какой будет прибыль в течение двух лет
+      .calculation-section__custom-range
+        .custom-range__track.calculation-section__custom-range-track
+          .custom-range__progress.calculation-section__custom-range-progress
+          .custom-range__thumb.calculation-section__custom-range-thumb
+      .calculation-section__months.font-w-medium.font-s-18
+        span 3
+        span 6
+        span 9
+        span 12
+        span 15
+        span 18
+        span 21
+        span 24
+      .calculation-section__block-result
+        span.font-w-bold.font-s-30-a Результат:
+        span.font-w-semi-bold.font-s-55
+          span#result 0
+          span  ₽

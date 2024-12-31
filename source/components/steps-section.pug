@@ -1,0 +1,75 @@
+section.steps-section
+  .wrapper
+    .steps-section__container
+
+      .steps-section__block-feedback
+        .font-w-p-regular.font-s-30.text-up Задайте любой вопрос о работе франшизы
+        form.steps-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+          .steps-section__form-column
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Задать вопрос
+
+      .steps-section__box
+        .steps-section__block-images
+          .swiper-desktop
+            .steps-section__images.swiper-wrapper
+              .steps-section__image.swiper-slide
+                img.steps-section__img(src="images/steps-section-img-1.jpg" loading="lazy" width="960" height="1242" alt="image")
+              .steps-section__image.swiper-slide
+                img.steps-section__img(src="images/steps-section-img-2.jpg" loading="lazy" width="960" height="1242" alt="image")
+              .steps-section__image.swiper-slide
+                img.steps-section__img(src="images/steps-section-img-3.jpg" loading="lazy" width="960" height="1242" alt="image")
+              .steps-section__image.swiper-slide
+                img.steps-section__img(src="images/steps-section-img-4.jpg" loading="lazy" width="960" height="1242" alt="image")
+              .steps-section__image.swiper-slide
+                img.steps-section__img(src="images/steps-section-img-5.jpg" loading="lazy" width="960" height="1242" alt="image")
+              .steps-section__image.swiper-slide
+                img.steps-section__img(src="images/steps-section-img-6.jpg" loading="lazy" width="960" height="1242" alt="image")
+            .desktop-pagination
+        .steps-section__block-steps
+          h2.steps-section__title.font-w-p-regular.font-s-52.text-up
+            | Как мы будем 
+            br.no-br
+            | открывать 
+            br
+            span.color-grey ваш бизнес?
+          .swiper-bullet
+            .steps-section__cards.swiper-wrapper
+              .steps-section__card.swiper-slide
+                .steps-section__card-title
+                  .font-w-p-regular.font-s-42-a шаг 01
+                .font-s-18 Заключение <br> партнерского договора
+              .steps-section__card.swiper-slide
+                .steps-section__card-title
+                  .font-w-p-regular.font-s-42-a шаг 02
+                .font-s-18 Аренда помещения <br> и ремонт
+              .steps-section__card.swiper-slide
+                .steps-section__card-title
+                  .font-w-p-regular.font-s-42-a шаг 03
+                .font-s-18 Заказ оборудования, <br> мебели, товара
+              .steps-section__card.swiper-slide
+                .steps-section__card-title
+                  .font-w-p-regular.font-s-42-a шаг 04
+                .font-s-18 Поиск и обучение <br> персонала
+              .steps-section__card.swiper-slide
+                .steps-section__card-title
+                  .font-w-p-regular.font-s-42-a шаг 05
+                .font-s-18 Реклама
+              .steps-section__card.swiper-slide
+                .steps-section__card-title
+                  .font-w-p-regular.font-s-42-a шаг 06
+                .font-s-18 Открытие точки, <br> старт работы
+            .bullet-pagination
+      .steps-section__bottom
+        .font-w-p-regular.font-s-30.text-up
+          | Получите подробный
+          br
+          span.color-grey план запуска в 1 клик
+        form.steps-section__bottom-form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Получить
